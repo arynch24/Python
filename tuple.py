@@ -14,3 +14,6 @@ thistuple = ("apple", "banana", "cherry")
 y = list(thistuple)
 y.append("orange")
 thistuple = tuple(y)
+
+
+##for cahnginhg anything in tuple just like adding or removing convert it into list first thna in tuple.

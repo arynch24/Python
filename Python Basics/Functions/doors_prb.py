@@ -3,7 +3,7 @@ for i in range(1,101):
     a.append(0)
 i=1
 while(i<101):
-    for j in range(0,100,i):
+    for j in range(i,100,i):
         if(a[j]==0):
             a[j]=1
         elif(a[j]==1):

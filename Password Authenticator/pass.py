@@ -6,10 +6,10 @@ def password_validation(pass_,user_,last_pass):
     repetition_flag=0
     hist_pass=0
     seq_flag=0
-    for i in range (len(pass_)):
-        if(pass_[i].isuppper()):
+    for i in range (0, len(pass_)):
+        if(pass_[i].isupper()):
             count_cap+=1
-        if(pass_[i].isuppper()):
+        if(pass_[i].islower()):
             count_small+=1
         if(pass_[i].isdigit()):
             count_digit+=1
@@ -17,7 +17,7 @@ def password_validation(pass_,user_,last_pass):
              count_spe_cha
         else:
             count_spe_cha+=1
-        if(pass_[i]==pass_[i+1]==pass_[i+2] ==pass_[i+3]==pass_[i+4] ):
+        if(pass_[i]==pass_[i-1]==pass_[i-2] ==pass_[i-3]==pass_[i-4] ):
             repetition_flag=1
         if(pass_[i:i+3] in user_):
             seq_flag=1

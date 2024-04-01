@@ -13,4 +13,4 @@ with open("output.txt","a") as file:
 
 with open("output.txt","r") as file_read:
     content=file_read.read()
-    print(content)
+    print(content) 

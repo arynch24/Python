@@ -6,3 +6,7 @@ with open("census.csv","r") as csv_file:
     for row in csv_reader:
         print(row)
     
+   
+
+    
+    
